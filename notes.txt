@@ -1,0 +1,17 @@
+Load the Driver
+Class.forName("driver_name")
+
+Class.forName("com.mysql.jdbc.Driver") //for mysql
+
+--------------
+
+DriverManger.registerDrive(new com.mysql.jdbc.Driver());
+
+
+Create a Connections:
+    Connection con=DriverManger.getConnection("url","username","password");
+
+    Connection con=DriverManger.getConnection("jdbc:mysql://localhost:3306/dbname","username","password");
+
+
+ tName varchar(200) not null, tCity varchar(400)
